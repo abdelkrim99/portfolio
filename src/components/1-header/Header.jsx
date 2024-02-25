@@ -9,7 +9,7 @@ function Header() {
   return (
     <header>
 
-      <button className='menu' onClick={() => {setShowModal(true)}}>show modal</button>
+      <button className='menu icon-menu' onClick={() => {setShowModal(true)}}></button>
       <div/>
 
       <nav>
@@ -22,15 +22,15 @@ function Header() {
         </ul>
       </nav>
 
-      <button>
-        light
+      <button className='mode'>
+        <span className='icon-moon-o'></span>
       </button>
 
       {showModal && (
         <div className='parent'>
         <div className="modal">
           <ul>
-          <li><button onClick={() => {setShowModal(false)}}>close</button></li>
+          <li><button className='icon-close' onClick={() => {setShowModal(false)}} /></li>
           <li><a href="">About</a></li>
           <li><a href="">Articles</a></li>
           <li><a href="">Projects</a></li>

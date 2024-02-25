@@ -1,0 +1,397 @@
+
+/* Start education  */
+
+.main .education .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    animation: zoomIn 1s linear forwards;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+@keyframes zoomIn {
+    0%  {opacity: 0}
+    100% {opacity: 1;}
+}
+
+.main .education .title div {
+    font-size: 2rem;
+}
+
+
+.main .education .timeline  {
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.main .education .timeline .timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: moveDown 1s linear forwards;
+    opacity: 0;
+}
+ @keyframes moveDown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+.main .education .timeline .timeline-container:nth-child(1) {
+    animation-delay: 6s ;
+}
+
+.main  .education.timeline .timeline-container:nth-child(2) {
+    animation-delay: 9s ;
+}
+
+.main .education .timeline .timeline-container:nth-child(3) {
+    animation-delay: 13s ;
+
+}
+
+.main .education .timeline .timeline-container .text-box {
+    padding: 20px 30px;
+    background-color: var(--bgHeader);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.main .education .timeline .timeline-container .text-box h2 {
+    color: var(--title);
+}
+
+.main .education .timeline .timeline-container .text-box p {
+    color: var(--subtitle);
+    margin-top: 10px;
+}
+
+.main .education .timeline .left-container {
+    left: 0;
+    z-index: 2;
+}
+
+.main .education .timeline .right-container {
+    left: 50%;
+    z-index: 2;
+}
+
+@media (max-width : 800px) {
+    .main {
+        margin-left: 20px;
+    }
+    .main .timeline .left-container ,
+    .main .timeline .right-container  {
+        left: 0;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.main .education .timeline .text-box .icon {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 50px;
+    border: 1px solid rgba(250, 128, 114, 0.637);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--bgHeader);
+    z-index: 2;
+}
+
+.main .education .timeline .left-container .text-box .icon {
+    left: calc(100% + 28px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.main .education .timeline .right-container .text-box .icon {
+
+    left: -72px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+@media (max-width : 800px) {
+    .main .timeline .text-box .icon {
+        left: 0;
+    }
+
+    .main .timeline .left-container .text-box .icon {
+        left: -70px;
+    }
+}
+
+.main .education .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    top: 10px;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    animation: moveLine 11s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+@media (max-width : 800px) {
+    .timeline::after {
+        left: 0;
+    }
+}
+
+@keyframes moveLine {
+    0% {
+        opacity: 1;
+        height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+/* End education */
+
+/* Start projects*/
+
+.projects {
+    margin-top: 100px;
+}
+
+.projects .projects-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.projects .projects-title .icon-folder2 {
+    font-size: 1.9rem;
+}
+
+.projects .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 30px;
+}
+
+.projects .card-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bgHeader);
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 8px;
+    transition: .2s;
+    position: relative;
+}
+
+.projects .card-container .card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .card-container .card:hover {
+    scale: 101%;
+}
+
+.projects .card-container .card img {
+    max-width: 100%;
+    width: 80%;
+}
+
+.projects .card-container .card h1 {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1.5rem;
+}
+
+.projects .card-container .card p {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    max-width: 100%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    justify-self: flex-start;
+}
+
+.projects .card-container .card .link {
+    display: flex;
+    gap: 10px;
+}
+
+.projects .card-container .card .link a {
+    font-size: 25px;
+    color: var(--title);
+}
+
+/* End projects  */
+
+/* Start skills  */
+
+.skills {
+    margin-top: 100px;
+}
+
+.skills .skills-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skills .skills-title .icon-code {
+    font-size: 1.9rem;
+}
+
+.skills .sections-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+/* start left section  */
+
+.skills .sections-container .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills .sections-container .left-section button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 18rem;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.skills .sections-container .left-section button:hover {
+    opacity: 1;
+}
+
+.skills .sections-container .left-section button.active-section {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
+}
+
+/* end left section  */
+
+/* start right section  */
+
+.skills .sections-container .right-section {
+    flex-grow: 1;
+}
+
+
+.skills .sections-container .right-section .skills-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgHeader);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.skills .sections-container .right-section .skills-container:hover {
+    border: 1px solid var(--blue);
+}
+
+.skills .sections-container .right-section .skills-container .content-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 50px;
+    padding: 20px 20px;
+    transition: 0.5s;
+}
+
+.skills .sections-container .right-section .skills-container .content-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 50px;
+    padding: 20px 20px;
+    transition: 0.5s;
+}
+
+.skills .sections-container .right-section .skills-container .content-2 .express {
+    max-width: 7%;
+}
+
+.skills .sections-container .right-section .skills-container .content-2 .prisma {
+    max-width: 7%;
+}
+
+.skills .sections-container .right-section .skills-container .content-2 .javafx {
+    max-width: 15%;
+}
+
+.skills  .sections-container .right-section .skills-container .content-2 .javaee {
+    max-width: 13%;
+}
+
+.skills .sections-container .right-section .skills-container .content-3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 50px;
+    padding: 20px 20px;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .skills .sections-container {
+        flex-direction: column;
+    }
+
+    .skills .sections-container .left-section {
+        flex-direction: row;
+    }
+}
+
+/* end right section  */
+
+/* End skills  */
+
