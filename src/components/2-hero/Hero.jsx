@@ -10,7 +10,7 @@ import './hero.css'
 function Hero() {
 
   const onButtonClick = () => {
-    const pdfUrl = "../../../public/ABOURI-Abdelkrim.pdf";
+    const pdfUrl = "/ABOURI-Abdelkrim.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "abouri-resume.pdf"; // specify the filename

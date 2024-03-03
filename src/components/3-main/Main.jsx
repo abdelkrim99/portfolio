@@ -67,7 +67,7 @@ function Main() {
         <div className="card-container">
           <div className="card" data-aos="fade-right">
             <div className="info">
-              <img src="public\1.png" alt="" />
+              <img src="/1.png" alt="" />
               <h1>
                 Java desktop application , Project For License Degree, USTHB.
               </h1>
@@ -83,7 +83,7 @@ function Main() {
 
           <div className="card" data-aos="flip-left">
             <div className="info">
-              <img src="public\2.png" alt="" />
+              <img src="/2.png" alt="" />
               <h1>web application , Project For Master Degree, USTHB.</h1>
               <p>
                 Seismic vision is a web application designed exclusively for
@@ -107,7 +107,7 @@ function Main() {
 
           <div className="card" data-aos="fade-left">
             <div className="info">
-              <img src="public\3.png" alt="" />
+              <img src="/3.png" alt="" />
               <h1>HTML&CSS template one (Leon).</h1>
               <p>
                 This project represents a remake of an existing website with
@@ -133,7 +133,7 @@ function Main() {
 
           <div className="card" data-aos="fade-right">
             <div className="info">
-              <img src="public\4.png" alt="" />
+              <img src="/4.png" alt="" />
               <h1>HTML&CSS template two (Kasper)</h1>
               <p>
                 This project represents a remake of an existing website with
@@ -159,7 +159,7 @@ function Main() {
 
           <div className="card" data-aos="flip-right">
             <div className="info">
-              <img src="public\5.png" alt="" />
+              <img src="/5.png" alt="" />
               <h1>HTML&CSS template three (Nixor)</h1>
               <p>
                 Experience our dynamic, modern website design - still in
@@ -179,7 +179,7 @@ function Main() {
 
           <div className="card" data-aos="fade-left">
             <div className="info">
-              <img src="public\6.png" alt="" />
+              <img src="/6.png" alt="" />
               <h1>coming project</h1>
               <p>Futur project will be created</p>
             </div>
@@ -238,10 +238,10 @@ function Main() {
                   <span className="icon-node-dot-js"></span>
                   <span className="icon-vue-dot-js1"></span>
                   <span className="icon-react"></span>
-                  <img className="express" src="public\express-js.png" alt="" />
-                  <img className="prisma" src="public\prisma.png" alt="" />
-                  <img className="javafx" src="public\javaFX.png" alt="" />
-                  <img className="javaee" src="public\javaee.png" alt="" />
+                  <img className="express" src="/express-js.png" alt="" />
+                  <img className="prisma" src="/prisma.png" alt="" />
+                  <img className="javafx" src="/javaFX.png" alt="" />
+                  <img className="javaee" src="/javaee.png" alt="" />
                 </div>
               )}
               {toggleState === 3 && (
