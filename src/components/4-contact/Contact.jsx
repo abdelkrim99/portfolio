@@ -2,15 +2,13 @@ import "./contact.css";
 
 import { useEffect, useRef, useState } from "react";
 
-import TimelineObserver from "react-timeline-animation";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Lottie from "lottie-react";
 import { useForm, ValidationError } from "@formspree/react";
 
-import dev from "../../../public/animation/dev.json";
+import contact from "../../../public/animation/contact.json";
 import done from "../../../public/animation/done.json";
 
 export default function Contact() {
@@ -78,7 +76,7 @@ export default function Contact() {
         <div className="animation" data-aos="fade-left">
           <Lottie
             className="devImage"
-            animationData={dev}
+            animationData={contact}
             style={{ height: 355 }}
           />
         </div>

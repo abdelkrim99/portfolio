@@ -19,7 +19,7 @@ function Main() {
       {/* start education  */}
 
       <div className="education">
-        <div className="title">
+        <div className="title" data-aos="zoom-in">
           <div className="icon-school"></div>
           <h1>Education</h1>
         </div>
@@ -59,7 +59,7 @@ function Main() {
       {/* start projects  */}
 
       <div className="projects">
-        <div className="projects-title">
+        <div className="projects-title"  data-aos="zoom-in">
           <div className="icon-folder2"></div>
           <h1>Projects</h1>
         </div>
@@ -195,7 +195,7 @@ function Main() {
 
       {/* start skills  */}
       <div className="skills">
-        <div className="skills-title">
+        <div className="skills-title" data-aos="zoom-in">
           <div className="icon-code"></div>
           <h1>Qualification</h1>
         </div>

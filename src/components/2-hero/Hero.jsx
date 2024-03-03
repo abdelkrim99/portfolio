@@ -83,9 +83,11 @@ function Hero() {
         </div>
       </div>
 
-      <div className="scroll-container">
-      <div className="icon-scroll"></div>
-      </div>
+      <div className="scroll-downs">
+  <div className="mousey">
+    <div className="scroller"></div>
+  </div>
+</div>
 
      
     </section>
