@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div className="citation">
             <div className="profil">
-              <img src="public\abdelkrim.jpg" alt="" />
+              <img src="/abdelkrim.jpg" alt="" />
               <div className="icon-verified"></div>
             </div>
             <p>"Living, learning, & leveling up one day at a time."</p>
