@@ -23,7 +23,7 @@ function Hero() {
     <section className="hero">
       <div className="left-section">
         <div className="parent-avatar">
-          <img src="\public\abdelkrim.jpg" alt="" className="avatar" />
+          <img src="/abdelkrim.jpg" alt="" className="avatar" />
           <div className='icon-verified'></div>
           <button className='download-button' onClick={onButtonClick}>
             <span>Download (CV)</span>
