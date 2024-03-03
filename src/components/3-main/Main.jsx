@@ -67,7 +67,7 @@ function Main() {
         <div className="card-container">
           <div className="card" data-aos="fade-right">
             <div className="info">
-              <img src="public\1.png" alt="" />
+              <img src="/1.png" alt="" />
               <h1>
                 Java desktop application , Project For License Degree, USTHB.
               </h1>

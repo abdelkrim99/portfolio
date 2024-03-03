@@ -122,6 +122,16 @@
     }
 }
 
+@media (max-width : 392px) {
+    .hero .sections-container .left-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero .sections-container .left-section p {
+        font-size: 0.8rem;
+    }
+}
+
 .test {
     border: 1px solid green;
 }
