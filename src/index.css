@@ -3,6 +3,7 @@
 html {
   font-family: 'Roboto' , sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -32,6 +33,11 @@ button:active {
   scale: 0.9;
 }
 
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 *, *:before, *:after {box-sizing: inherit;}  
 
 :root {
@@ -44,11 +50,34 @@ button:active {
   --bgHeader : rgb(39 39 42);
   --blue : rgb(93 188 252);
 
+  --section : rgb(36, 37, 46);
 
+  --button : rgba(36, 37, 46, 1);;
+  --buttontext : rgba(255 , 255 , 255 , 1);
+  --buttonborder : rgba(25, 93, 230, 0);
+
+  --activebutton : rgb(25,93,230);
 }
 
 .light {
-  background-color: #fff;
+  --primary: rgb(250, 250, 250);
+  --secondary : rgb(255, 255, 255);
+  --border : rgba(202,202,202,0.518);
+
+  --title : rgb(39, 39, 42);
+  --subtitle : rgb(82, 82, 91);
+
+  --bgHeader : rgb(253, 253, 253);
+  --blue : rgb(93 188 252);
+
+  --section : rgb(255, 255, 255);
+
+  --button : rgb(255, 255, 255);
+  --buttontext : rgb(25,93,230);
+  --buttonborder : rgb(25,93,230);
+  
+  --activebutton : rgb(25,93,230);
+  --coloractivebutton : rgb(255, 255, 255);
 }
 
 body {
@@ -72,6 +101,55 @@ body {
   margin: 3rem 0;
 }
 
+/* Start scrollbar  */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.818);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 0px;
+  background: rgba(47, 124, 220, 0.807);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: rgba(34, 92, 164, 0.807);
+}
+
+::-webkit-scrollbar-thumb:active{
+  background: rgba(25, 68, 120, 0.807);
+}
+
+/* End scrollbar  */
+
+/* Start scroll to top  */
+
+.container .scroll-top {
+  position: fixed;
+  z-index: 300;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: rgba(53, 138, 222, 0.85);
+  color: var(--title);
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.container .scroll-top:hover {
+  background-color: rgba(53, 138, 222, 1);
+}
+
+
+/* End scroll to top  */
+
 @media (max-width: 1000px) {
   .container {
     width: 90%;
@@ -84,4 +162,11 @@ body {
     width: 100%;
     padding: 0 1.7rem;
   }
+
+  .container .scroll-top {
+    opacity: 0.5;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
+

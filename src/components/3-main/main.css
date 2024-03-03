@@ -2,6 +2,7 @@
 /* Start education  */
 
 .main .education .title {
+    color: var(--title);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +46,15 @@
     }
 } 
 
+.main .education .timeline .timeline-container .icon {
+    color: var(--title);
+}
+
 .main .education .timeline .timeline-container:nth-child(1) {
     animation-delay: 6s ;
 }
 
-.main  .education.timeline .timeline-container:nth-child(2) {
+.main .education .timeline .timeline-container:nth-child(2) {
     animation-delay: 9s ;
 }
 
@@ -60,7 +65,7 @@
 
 .main .education .timeline .timeline-container .text-box {
     padding: 20px 30px;
-    background-color: var(--bgHeader);
+    background-color: var(--border);
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -138,7 +143,7 @@
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: white;
+    background-color: var(--title);
     top: 10px;
     left: 50%;
     z-index: 0;
@@ -175,6 +180,7 @@
 }
 
 .projects .projects-title {
+    color: var(--title);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,6 +229,7 @@
 }
 
 .projects .card-container .card h1 {
+    color: var(--title);
     text-align: center;
     margin: 15px auto;
     font-size: 1.5rem;
@@ -256,6 +263,7 @@
 }
 
 .skills .skills-title {
+    color: var(--title);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +290,8 @@
 }
 
 .skills .sections-container .left-section button {
-    background-color: rgba(36, 37, 46, 1);
+    background-color: var(--button);
+    color: var(--buttontext);
     width: 18rem;
     padding: 10px 0;
     text-align: center;
@@ -290,7 +299,7 @@
     text-transform: capitalize;
     opacity: 0.5;
     transition: 0.3s;
-    border: 1px solid transparent;
+    border: 1px solid var(--buttonborder);
     border-radius: 5px;
 }
 
@@ -299,11 +308,13 @@
 }
 
 .skills .sections-container .left-section button.active-section {
+    background-color: var(--activebutton);
+    color: var(--coloractivebutton);
     opacity: 1;
     font-weight: bold;
     letter-spacing: 0.6px;
     padding: 0.8rem 0;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--buttonborder);
 }
 
 /* end left section  */
@@ -318,7 +329,6 @@
 .skills .sections-container .right-section .skills-container {
     width: 100%;
     height: 100%;
-    background-color: var(--bgHeader);
     border-radius: 10px;
     border: 1px solid transparent;
     transition: 0.5s;
@@ -326,9 +336,11 @@
 
 .skills .sections-container .right-section .skills-container:hover {
     border: 1px solid var(--blue);
+    border-radius: 5px;
 }
 
 .skills .sections-container .right-section .skills-container .content-1 {
+    background-color: var(--section);
     width: 100%;
     height: 100%;
     display: flex;
@@ -338,9 +350,11 @@
     font-size: 50px;
     padding: 20px 20px;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .skills .sections-container .right-section .skills-container .content-2 {
+    background-color: var(--section);
     width: 100%;
     height: 100%;
     display: flex;
@@ -351,6 +365,7 @@
     font-size: 50px;
     padding: 20px 20px;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .skills .sections-container .right-section .skills-container .content-2 .express {
@@ -370,6 +385,7 @@
 }
 
 .skills .sections-container .right-section .skills-container .content-3 {
+    background-color: var(--section);
     width: 100%;
     height: 100%;
     display: flex;
@@ -379,6 +395,7 @@
     font-size: 50px;
     padding: 20px 20px;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {

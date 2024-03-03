@@ -1,20 +1,161 @@
 .contact {
     margin-top: 100px;
+    
 }
 
 .contact .contact-title {
+    color: var(--title);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.contact .contact-title .icon-code {
-    font-size: 1.9rem;
+.contact .contact-title .icon-envelope {
+    font-size: 1.7rem;
+}
+
+.contact .contact-title h1 {
+    font-size: 2rem;
 }
 
 .contact .contact-content {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
+
+.contact p {
+    color: var(--subtitle);
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.contact label {
+    color: var(--subtitle);
+}
+
+.contact .contact-content .form {
+    align-self: center;
+}
+
+.contact .contact-content .form .email-group {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact .contact-content .form .message-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact .contact-content .form #email,
+.contact .contact-content .form #message {
+    all: unset;
+    background-color: var(--bgHeader);
+    color: var(--title);
+    width: 20rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.256);
+    transition: 0.4s;
+}
+
+.contact .contact-content .form #message {
+    min-height: 5rem;
+    resize: vertical;
+}
+
+.contact .contact-content .form #email:focus,
+.contact .contact-content .form #message:focus {
+    border: 1px solid var(--blue);
+}
+
+.contact .contact-content .form #email:hover,
+.contact .contact-content .form #message:hover {
+    border: 1px solid var(--blue);
+}
+
+.contact .contact-content .form .buttonSumbit {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-content .form button {
+    align-self: flex-end;
+    background-color: rgba(36, 37, 46, 1);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    
+}
+
+.contact .contact-content .form button:hover {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    border: 1px solid var(--blue);
+}
+
+.contact .contact-content .form .successMessage {
+    display: flex;
+    gap : 10px;
+    align-items: center;
+    margin-top: 1.7rem;
+    color: var(--title);
+}
+
+.contact .contact-content .form .successMessage {
+
+}
+
+@media (max-width : 687px) {
+
+    .contact .contact-content .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-content .form .email-group {
+        flex-direction: column;
+    }
+
+    .contact .contact-content .form .email-group label {
+        align-self: flex-start;
+    }
+
+    .contact .contact-content .form .message-group {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact .contact-content .form .message-group label {
+        align-self: flex-start;
+    }
+
+    .contact .contact-content .form button {
+        margin-top: 30px;
+    }
+}
+
+/* .contact .contact-content .animation {
+} */
+
+@media (max-width: 768px) {
+    .contact .animation {
+        display: none;
+    }
+}
+

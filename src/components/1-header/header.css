@@ -22,7 +22,7 @@ header nav {
     background-color: var(--bgHeader);
     padding: .7rem 1.6rem;
     border-radius: 55px;
-    box-shadow: 1px 1px 5px rgb(47, 47, 47);
+    box-shadow: 1px 1px 5px rgb(47, 47, 47 , 0.4);
 }
 
 header nav ul {
@@ -74,7 +74,6 @@ header .icon-menu , header .mode {
 
 header .icon-menu:hover , header .mode:hover {
     color: var(--title);
-    background-color: rgb(45, 45, 48);
     border: 0.5px solid rgba(244, 165, 96, 1);
 }
 
@@ -94,15 +93,21 @@ header .icon-close:hover {
     transform: rotate(360deg);
 }
 
+header .icon-sun {
+    color: orange;
+}
+
 /* Start modal pop up*/
 
 header .parent {
+    z-index: 100;
     position: fixed;
     inset: 0;
     background-color: rgba(59, 56, 56, 0.8);
 }
 
 header .parent .modal {
+    z-index: 100;
     background-color: var(--secondary);
     width: 75%;
     margin: 30px auto;

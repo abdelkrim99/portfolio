@@ -1,0 +1,124 @@
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footer-container .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .footer-container .info-container .citation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-container .info-container .citation .profil {
+    display: flex;
+    gap: 10px;
+}
+
+footer .footer-container .info-container .citation .profil img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+footer .footer-container .info-container .citation .profil .icon-verified {
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+/* informations */
+
+footer .footer-container .info-container .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    gap: 10px;
+}
+
+footer .footer-container .info-container .informations .adresse,
+footer .footer-container .info-container .informations .email,
+footer .footer-container .info-container .informations .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-container .info-container .informations .adresse span {
+    font-size: 1rem;
+    color: var(--subtitle);
+}
+
+footer .footer-container .info-container .informations .adresse p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle);
+}
+
+footer .footer-container .info-container .informations .email span {
+    font-size: 1rem;
+    color: var(--subtitle);
+}
+
+footer .footer-container .info-container .informations .email p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle); 
+}
+
+footer .footer-container .info-container .informations .phone span {
+    font-size: 1rem;
+    color: var(--subtitle);
+}
+
+footer .footer-container .info-container .informations .phone p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle); 
+}
+
+@media (max-width : 1200px) {
+    footer .footer-container .info-container .informations {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width : 768px) {
+
+    footer .footer-container .citation {
+        flex-direction: column;
+    }
+
+    footer .footer-container .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* -------------------------------------*/
+
+footer .footer-container .social {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+footer .footer-container .social a {
+    color: var(--title);
+}
+
+footer > p {
+    color: var(--subtitle);
+    text-align: center;
+    margin: 20px auto;
+}

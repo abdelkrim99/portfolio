@@ -45,16 +45,18 @@ function Hero() {
           technologies. Possessing a strong foundation in the field,
         </p>
         <div className="social">
-          <a className='twitter icon-twitter' href="https://twitter.com/kimotgr1" target="_blank"></a>
+          <a className='twitter icon-twitter' href="https://twitter.com/kimotgr" target="_blank"></a>
           <a className="instagram icon-instagram" href='https://www.instagram.com/kimotgr' target="_blank"></a>
           <a className="facebook icon-facebook" href='https://www.facebook.com/kimotgr' target="_blank"></a>
           <a className="linkedin icon-linkedin" href='https://www.linkedin.com/in/abouri-abdelkrim-817416254/' target="_blank"></a>
           <a className="github icon-github" href='https://github.com/abdelkrim99' target="_blank"></a>
         </div>
       </div>
+
       <div className="right-section animation">
-      <Lottie className='devImage' animationData={dev} />
+      <Lottie className='devImage' animationData={dev}/>
       </div>
+            
       <div className='icon-scroll'></div>
     </section>
   )

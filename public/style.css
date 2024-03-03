@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u0g3yi');
-  src:  url('fonts/icomoon.eot?u0g3yi#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u0g3yi') format('truetype'),
-    url('fonts/icomoon.woff?u0g3yi') format('woff'),
-    url('fonts/icomoon.svg?u0g3yi#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bamq3l');
+  src:  url('fonts/icomoon.eot?bamq3l#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bamq3l') format('truetype'),
+    url('fonts/icomoon.woff?bamq3l') format('woff'),
+    url('fonts/icomoon.svg?bamq3l#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e949";
+}
+.icon-pin:before {
+  content: "\e949";
+}
+.icon-map-marker:before {
+  content: "\e949";
+}
+.icon-marker:before {
+  content: "\e949";
+}
+.icon-notebook:before {
+  content: "\e00a";
+}
+.icon-attachment:before {
+  content: "\e02e";
+}
+.icon-study:before {
+  content: "\e903";
+}
+.icon-mail-envelope-open:before {
+  content: "\e942";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e943";
+}
+.icon-document-file-pdf:before {
+  content: "\e90e";
+}
 .icon-adobephotoshop:before {
   content: "\e916";
   color: #00c8ff;
+}
+.icon-airbnb:before {
+  content: "\e94a";
+  color: #ff5a5f;
 }
 .icon-atom:before {
   content: "\e917";
@@ -212,8 +246,17 @@
 .icon-folder1:before {
   content: "\e911";
 }
+.icon-phone1:before {
+  content: "\e94b";
+}
 .icon-code:before {
   content: "\e906";
+}
+.icon-phone:before {
+  content: "\e94c";
+}
+.icon-location1:before {
+  content: "\e94d";
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -245,17 +288,11 @@
 .icon-file-pdf:before {
   content: "\eadf";
 }
-.icon-notebook:before {
-  content: "\e00a";
+.icon-envelope1:before {
+  content: "\e944";
 }
-.icon-attachment:before {
-  content: "\e02e";
-}
-.icon-study:before {
-  content: "\e903";
-}
-.icon-document-file-pdf:before {
-  content: "\e90e";
+.icon-envelope2:before {
+  content: "\e945";
 }
 .icon-laptop:before {
   content: "\e907";
@@ -265,6 +302,12 @@
 }
 .icon-user:before {
   content: "\e909";
+}
+.icon-chevron-thin-up:before {
+  content: "\e946";
+}
+.icon-chevron-with-circle-up:before {
+  content: "\e947";
 }
 .icon-download:before {
   content: "\e90f";
@@ -287,6 +330,9 @@
 .icon-folder2:before {
   content: "\e912";
 }
+.icon-arrow_upward:before {
+  content: "\e948";
+}
 .icon-school:before {
   content: "\e90c";
 }
@@ -299,6 +345,9 @@
 .icon-sun:before {
   content: "\e900";
 }
+.icon-envelope-o:before {
+  content: "\f003";
+}
 .icon-close:before {
   content: "\f00d";
 }
@@ -308,6 +357,9 @@
 .icon-times:before {
   content: "\f00d";
 }
+.icon-arrow-up:before {
+  content: "\f062";
+}
 .icon-folder:before {
   content: "\f07b";
 }
@@ -316,6 +368,12 @@
 }
 .icon-briefcase:before {
   content: "\f0b1";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-chevron-circle-up:before {
+  content: "\f139";
 }
 .icon-moon-o:before {
   content: "\f186";
