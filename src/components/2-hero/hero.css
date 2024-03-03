@@ -1,14 +1,20 @@
 
 /* hero section */
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.hero .sections-container {
     margin-top: 9rem;
     display: flex;
     justify-content: space-between;
-    height: 65vh;
 }
 
 @media (max-width : 768px) {
-    .hero {
+    .hero .sections-container{
         padding: 5px 15px;
         margin-top: 3.5rem;
     }
@@ -17,12 +23,12 @@
 
 /* left section */
 
-.hero .left-section .parent-avatar {
+.hero .sections-container .left-section .parent-avatar {
     display: flex;
     gap: 10px;
 }
 
-.hero .left-section .parent-avatar img {
+.hero .sections-container .left-section .parent-avatar img {
     width: 120px;
     border-radius: 50%;
     border: 1px solid darkorange;
@@ -30,43 +36,43 @@
     box-shadow: 1px 1px 40px rgba(128, 128, 128, 0.215) inset;
 }
 
-.hero .left-section .parent-avatar .icon-verified {
+.hero .sections-container .left-section .parent-avatar .icon-verified {
     color: var(--blue);
     align-self: flex-end;
     margin-bottom: 10px;
     
 }
 
-.hero .left-section h1 {
+.hero .sections-container .left-section h1 {
     font-size: 33px;
     font-weight: 600;
     margin-top: 20px;
     color: var(--title);
 }
 
-.hero .left-section p {
+.hero .sections-container .left-section p {
     margin-top: 20px;
     color: var(--subtitle);
     line-height: 1.7;
 }
 
-.hero .left-section .social {
+.hero .sections-container .left-section .social {
     display: flex;
     gap: 25px;
     margin-top: 20px;
 }
 
-.hero .left-section .social a {
+.hero .sections-container .left-section .social a {
     transition: 0.4s;
     color: var(--subtitle);
     font-size: 1.4rem;
 }
 
-.hero .left-section .social a:hover {
+.hero .sections-container .left-section .social a:hover {
     color: var(--title);
 }
 
-.hero .download-button {
+.hero .sections-container .download-button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -77,25 +83,25 @@
     transition: 0.3s;
 }
 
-.hero .download-button .icon-download {
+.hero .sections-container .download-button .icon-download {
     display: none;
 }
 
-.hero .download-button:hover .icon-file-pdf {
+.hero .sections-container .download-button:hover .icon-file-pdf {
     display: none;
 }
 
-.hero .download-button:hover .icon-download {
+.hero  .sections-container .download-button:hover .icon-download {
     display: block;
 }
 
-.hero .download-button:hover {
+.hero .sections-container .download-button:hover {
     background-color: rgba(219, 0, 0, 0.885);
 }
 
 /* right section */
 
-.hero .right-section{
+.hero .sections-container .right-section{
     width: 100%;
     translate: 30px 10px;
 }
@@ -107,38 +113,41 @@
 }
 
 @media (max-width : 768px) {
-    .hero .left-section h1 {
-        font-size: 1.5rem;
+    .hero .sections-container .left-section h1 {
+        font-size: 1.4rem;
     }
 
-    .hero .left-section p {
+    .hero .sections-container .left-section p {
         font-size: 0.9rem;
     }
 }
 
+.test {
+    border: 1px solid green;
+}
 
 /* start scroll icon*/
-.icon-scroll,
-.icon-scroll:before
-{
+
+.scroll-container .icon-scroll,
+.scroll-container .icon-scroll:before {
     position: absolute;
     left: 50%;
 }
 
-.icon-scroll
+.scroll-container .icon-scroll
  {
     width: 30px;
     height: 50px;
     margin-left: -20px;
-    bottom: 5%;
+    bottom: 3%;
     margin-top: -35px;
     box-shadow: inset 0 0 0 1px var(--title);
     border-radius: 25px;
  }
 
-.icon-scroll:before
+ .scroll-container .icon-scroll:before
   {
-    content: '';
+  content: '';
   width: 8px;
   height: 8px;
   background: var(--title);

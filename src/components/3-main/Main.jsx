@@ -56,7 +56,7 @@ function Main() {
 
       {/* end education  */}
 
-      {/* start prjects  */}
+      {/* start projects  */}
 
       <div className="projects">
         <div className="projects-title">
