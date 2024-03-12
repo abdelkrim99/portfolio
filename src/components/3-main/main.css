@@ -416,6 +416,10 @@
     }
 }
 
+.skills .sections-container .right-section .skills-container .icon-github {
+    color: var(--title);
+}
+
 /* end right section  */
 
 /* End skills  */
