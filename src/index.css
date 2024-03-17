@@ -142,7 +142,7 @@ body {
   right: 3rem;
   bottom: 3rem;
   background-color: rgba(53, 138, 222, 0.85);
-  color: var(--title);
+  color: white;
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 50%;

@@ -26,11 +26,11 @@ footer .footer-container .info-container .citation .profil {
 }
 
 footer .footer-container .info-container .citation .profil .icon-verified {
-    color: var(--primary);
+    color: var(--blue);
 }
 
 footer .footer-container .info-container .citation p {
-    color: var(--primary);
+    color: var(--title);
 }
 
 footer .footer-container .info-container .citation .profil img {
