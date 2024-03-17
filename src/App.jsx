@@ -23,8 +23,8 @@ function App() {
     <div className='container' id="header">
       <Header/>
       <Hero/>
-      <div className='divider'/>
-      <Main />
+      <div className='divider divider1'/>
+      <Main/>
       <div className='divider'/>
       <Contact/>
       <div className='divider'/>
