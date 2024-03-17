@@ -25,6 +25,14 @@ footer .footer-container .info-container .citation .profil {
     gap: 10px;
 }
 
+footer .footer-container .info-container .citation .profil .icon-verified {
+    color: var(--primary);
+}
+
+footer .footer-container .info-container .citation p {
+    color: var(--primary);
+}
+
 footer .footer-container .info-container .citation .profil img {
     width: 130px;
     border-radius: 50%;

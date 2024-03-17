@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
             <div className="phone">
               <span className="icon-phone"></span>
-              <p>+123 (0)541 38 32 60</p>
+              <p>+213 (0)541 38 32 60</p>
             </div>
           </div>
 
