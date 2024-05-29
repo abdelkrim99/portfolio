@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
             <div className="email">
               <span className="icon-envelope1"></span>
-              <p>abouri.abdelkrim"gmail.com</p>
+              <p>abouri.abdelkrim@gmail.com</p>
             </div>
             <div className="phone">
               <span className="icon-phone"></span>
